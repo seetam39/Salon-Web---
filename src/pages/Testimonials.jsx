@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiStar, FiQuote, FiAward, FiUsers, FiTrendingUp } from 'react-icons/fi';
+import { FiStar, FiMessageCircle, FiAward, FiUsers, FiTrendingUp } from 'react-icons/fi';
 
 const Testimonials = () => {
   const testimonials = [
@@ -154,7 +154,7 @@ const Testimonials = () => {
                 className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 relative"
               >
                 <div className="absolute top-4 right-4">
-                  <FiQuote className="w-8 h-8 text-pink-200" />
+                  <FiMessageCircle className="w-8 h-8 text-pink-200" />
                 </div>
 
                 <div className="flex items-center mb-6">

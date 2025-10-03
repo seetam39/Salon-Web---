@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiStar, FiGift, FiCrown, FiHeart, FiZap, FiCheck, FiUsers, FiTrendingUp, FiAward } from 'react-icons/fi';
+import { FiStar, FiGift, FiAward, FiHeart, FiZap, FiCheck, FiUsers, FiTrendingUp } from 'react-icons/fi';
 
 const Loyalty = () => {
   const [activeTab, setActiveTab] = useState('benefits');

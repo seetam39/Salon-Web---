@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiCheck, FiStar, FiCrown, FiHeart, FiZap, FiGift } from 'react-icons/fi';
+import { FiCheck, FiStar, FiAward, FiHeart, FiZap, FiGift } from 'react-icons/fi';
 
 const Pricing = () => {
   const [billingCycle, setBillingCycle] = useState('monthly');
@@ -93,7 +93,7 @@ const Pricing = () => {
       price: '$299',
       originalPrice: '$380',
       description: 'Ultimate luxury experience',
-      icon: FiCrown,
+      icon: FiAward,
       color: 'from-yellow-400 to-orange-500',
       features: [
         'Full Hair Color',
