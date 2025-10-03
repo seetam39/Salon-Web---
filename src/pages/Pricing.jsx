@@ -153,6 +153,11 @@ const Pricing = () => {
     }
   ];
 
+  const getAnnualPrice = (monthlyPrice) => {
+    const price = parseInt(monthlyPrice.replace('$', ''));
+    return Math.round(price * 0.8 * 12);
+  };
+
   return (
     <div className="min-h-screen pt-20">
       {/* Hero Section */}
@@ -386,7 +391,7 @@ const Pricing = () => {
                   <h3 className="text-2xl font-bold text-gray-900 mb-2">{membership.name}</h3>
                   <div className="flex items-center gap-2 mb-4">
                     <span className="text-4xl font-bold text-pink-600">
-                      ${billingCycle === 'annual' ? Math.round(parseInt(membership.price.replace('$', '')) * 0.8 * 12) : membership.price}
+                      ${billingCycle === 'annual' ? getAnnualPrice(membership.price) : membership.price}
                     </span>
                     <span className="text-gray-600">/{membership.period}</span>
                   </div>
